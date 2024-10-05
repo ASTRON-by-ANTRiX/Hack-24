@@ -21,7 +21,7 @@
       border-radius: 10px;
       padding-top: 10px;
       width: 300px;
-      height: 450px;
+      height: 420px;
       text-align: center;
       background-color: #0E1122;
     background-image: url('../../assets/alienCardBg.png'); /* Adjust path as necessary */
@@ -51,7 +51,7 @@
       flex-direction: column;
       margin: 0;
       position: relative;
-      right: 20%;
+      right: 10%;
       text-align: left;
       font-family: 'Bondi', sans-serif;
       color: #AEFAF7;
