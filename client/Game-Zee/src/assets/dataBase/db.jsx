@@ -1,36 +1,42 @@
 const exoplanetsData = [
     {
-      name: 'Kepler-186f',
-      image: 'https://media.sketchfab.com/models/c484b8b4aa9248b6998b6222d62f5a77/thumbnails/e44f4cda21a7448895b01e6968a8dff1/3388e7f338f9422b9bf100fceae56acf.jpeg', // Replace with actual image URL
-      atmosphere: 'Unknown',
-      size: '1.1 Earths',
-      mass: 0.55, // in x10^24 kg
-      angularVelocity: 1.0, // degrees per day (hypothetical)
-      distanceFromStar: 0.34, // in astronomical units (AU)
-      revolution: 130, // in Earth days
-      moons: 0,
+      planetName: "Planet A",
+      day: "5 Earth Days",
+      distanceFromHostStar: "2 AU",
+      year: "10 Earth Years",
+      yearOfDiscovery: 2010,
+      mass: "1.5 Earth Mass",
+      asteroidHits: "Low",
+      atmosphere: "90% Habitable",
+      gravity: "1.2 Times the Earth's",
+      planetType: "Rocky",
+      overallScore: 85,
     },
     {
-      name: 'Proxima Centauri b',
-      image: 'https://media.sketchfab.com/models/c484b8b4aa9248b6998b6222d62f5a77/thumbnails/e44f4cda21a7448895b01e6968a8dff1/3388e7f338f9422b9bf100fceae56acf.jpeg', // Replace with actual image URL
-      atmosphere: 'Possibly habitable',
-      size: '1.17 Earths',
-      mass: 0.65, // in x10^24 kg
-      angularVelocity: 1.2, // degrees per day (hypothetical)
-      distanceFromStar: 0.048, // in astronomical units (AU)
-      revolution: 11.2, // in Earth days
-      moons: 1,
+      planetName: "Planet C",
+      day: "8 Earth Days",
+      distanceFromHostStar: "1.5 AU",
+      year: "15 Earth Years",
+      yearOfDiscovery: 2015,
+      mass: "3 Earth Mass",
+      asteroidHits: "Moderate",
+      atmosphere: "70% Habitable",
+      gravity: "1.8 Times the Earth's",
+      planetType: "Gas Giant",
+      overallScore: 90,
     },
     {
-      name: 'TRAPPIST-1e',
-      image: 'https://media.sketchfab.com/models/c484b8b4aa9248b6998b6222d62f5a77/thumbnails/e44f4cda21a7448895b01e6968a8dff1/3388e7f338f9422b9bf100fceae56acf.jpeg', // Replace with actual image URL
-      atmosphere: 'Unknown',
-      size: '1.03 Earths',
-      mass: 0.76, // in x10^24 kg
-      angularVelocity: 1.0, // degrees per day (hypothetical)
-      distanceFromStar: 0.03, // in astronomical units (AU)
-      revolution: 6.1, // in Earth days
-      moons: 0,
+      planetName: "Planet D",
+      day: "4 Earth Days",
+      distanceFromHostStar: "3 AU",
+      year: "20 Earth Years",
+      yearOfDiscovery: 2018,
+      mass: "2.5 Earth Mass",
+      asteroidHits: "High",
+      atmosphere: "60% Habitable",
+      gravity: "2.0 Times the Earth's",
+      planetType: "Ice Giant",
+      overallScore: 75,
     },
   ];
   export default exoplanetsData;

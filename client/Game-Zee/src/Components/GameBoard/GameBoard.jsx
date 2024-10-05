@@ -6,6 +6,8 @@ import styles from './GameBoard.module.css'; // Import the CSS module
 import exoplanetsData from '../../assets/dataBase/db'
 
 const GameBoard = () => {
+    
+      
     return (
         <div className={styles.gameBoard}>
             <h1>Planetary Habitability Game</h1>
