@@ -34,10 +34,12 @@ const PlanetCard = ({ planetData }) => {
         <p className={styles.description}>Mass: <br/><p className={styles.values}>{mass}</p></p>
         <p className={styles.description}>Gravity: <br/><p className={styles.values}>{gravity}</p></p>
         </div>
+        <div className={styles.verticalLine}></div>
         <div className={styles.innerSubInfo}>
         <p className={styles.description}>Planet Type: <br/><p className={styles.values}>{planetType}</p></p>
         <p className={styles.description}>Asteroid Hits:<br/><p className={styles.values}>{asteroidHits}</p></p>
         </div>
+        <div className={styles.verticalLine}></div>
         <div className={styles.innerSubInfo}>
         <p className={styles.description}>Atmosphere: <br/><p className={styles.values}>{atmosphere}</p></p>
         <p className={styles.oscore}>Overall<br/> Score:  <br/><p className={styles.valuesScore}>{overallScore}</p></p>
