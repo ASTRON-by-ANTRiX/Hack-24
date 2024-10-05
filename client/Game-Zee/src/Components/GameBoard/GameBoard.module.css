@@ -1,0 +1,27 @@
+
+
+.gameBoard {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .planetCards {
+    display: flex;
+    justify-content: right;
+    position: relative; 
+    padding: 0; 
+  }
+  
+  .planetCard {
+    position: relative; 
+    margin: -40px 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    z-index: 1; 
+    width: 200px; 
+  }
+  
+  .planetCard:hover {
+    transform: scale(1.05); 
+    z-index: 2; 
+  }
+  

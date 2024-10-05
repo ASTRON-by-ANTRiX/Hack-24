@@ -1,0 +1,50 @@
+.planetCard {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .planetImage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+  }
+  
+  .title {
+    margin: 10px 0;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .description {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .editableFields {
+    margin-top: 20px;
+  }
+  
+  .editableFields label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .editableFields input {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
