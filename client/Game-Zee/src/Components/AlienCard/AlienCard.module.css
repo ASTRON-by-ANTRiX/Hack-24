@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Bondi';
+    src: url('../../fonts/Bondi.ttf') format('truetype'); /* Adjust path as necessary */
+    font-weight: normal; /* or bold if you have a bold version */
+    font-style: normal; /* or italic if you have an italic version */
+  }
+  @font-face {
+    font-family: 'HIGHSENS';
+    src: url('../../fonts/HIGHSENS.otf') format('opentype'); /* Adjust path as necessary */
+    font-weight: normal; /* or bold if you have a bold version */
+    font-style: normal; /* or italic if you have an italic version */
+  }
+  @font-face {
+    font-family: 'jupiter';
+    src: url('../../fonts/Jupiteroid-Regular.ttf') format('truetype'); /* Adjust path as necessary */
+    font-weight: normal; /* or bold if you have a bold version */
+    font-style: normal; /* or italic if you have an italic version */
+  }
+  .planetCard {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding-top: 10px;
+      width: 300px;
+      height: 450px;
+      text-align: center;
+      background-color: #0E1122;
+    background-image: url('../../assets/alienCardBg.png'); /* Adjust path as necessary */
+    background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent tiling of the image */
+      box-shadow: 0 4px 8px rgba(251, 249, 249, 0.381);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+    }
+    .yod{
+      color: #AEFAF7;
+      width: 100%;
+      text-align: right;
+      padding-right: 30px;
+    }
+    .topLine{
+      width: 90%;
+      height: 3px;
+      background-color: #AEFAF7;
+      position: relative;
+    }
+    .topLeftInfo{
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      position: relative;
+      right: 20%;
+      text-align: left;
+      font-family: 'Bondi', sans-serif;
+      color: #AEFAF7;
+      z-index: 2;
+    }
+    
+    .values{
+      font-family: 'jupiter',sans-serif;
+      font-size: 11px;
+    }
+    
+    
+    .title {
+      margin: 10px 0;
+      font-size: 30px;
+      font-family: 'Bondi', sans-serif;
+    }
+    
+    .description {
+      font-size: 15px;
+      margin: 0;
+      font-family: 'HIGHSENS', sans-serif;
+    }
+    .outerSubInfo{
+      display: flex;
+      flex-direction: row;
+      background-color: #270431;
+      padding: 5px;
+      width: 90%;
+      justify-content: space-between;
+      box-shadow: 0 4px 8px rgba(251, 249, 249, 0.381);
+    }
+    .innerSubInfo{
+      display: flex;
+      flex-direction: column;
+      color: #AEFAF7;
+    }
+    .oscore{
+      background-color: #AEFAF7;
+      color: #270431;
+      margin: 0;
+      margin-right: 20px;
+      width: 90px;
+      height: 100px;
+      border-radius: 5px;
+      font-size: 27px;
+      font-family: 'HIGHSENS', sans-serif;
+    }
+    .valuesScore{
+      font-family: 'jupiter',sans-serif;
+      margin: 0;
+    }
+    .verticalLine{
+      width: 3px;
+      height: 100px;
+      margin: 0;
+      background-color: #AEFAF7;
+    }
+    
+    
+    
+    
+    
+    
