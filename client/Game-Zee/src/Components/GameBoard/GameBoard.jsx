@@ -17,7 +17,7 @@ import card from '../../assets/PlanetCard.svg'
 
 const GameBoard = () => {
 
-
+    alert("Under Development");
     return (
         <div className="flex justify-between">
             <div className='w-screen h-screen absolute'>
