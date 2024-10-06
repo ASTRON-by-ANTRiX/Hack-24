@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 function Button({ btnTxt, width, children }) {
   return (
-    <div className={`flex w-${width} h-auto px-3 py-2 bg-[#aefaf7] rounded-sm items-center justify-between`}>
+    <div className={`flex w-${width} h-auto px-3 py-2 bg-[#aefaf7] rounded-sm items-center justify-between mx-4`}>
       {/* Button text aligned */}
-      <button className='text-[#17506e] font-heavitas flex items-center justify-center'>
+      <button className="text-[#17506e] font-heavitas flex items-center justify-center">
         {btnTxt}
       </button>
 

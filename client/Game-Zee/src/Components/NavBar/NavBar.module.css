@@ -11,7 +11,7 @@
     align-items: center;
     padding: 30px 20px;
     border-radius: 10px;
-    height: 10vh;
+    height: 8vh;
     background-color: #B4FAF8;
     font-family: 'heavitas',san-serif;
     margin: 1rem;
@@ -39,7 +39,7 @@
   .navLinks li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 0.95rem;
     transition: all 0.5s ease-out;
   }
 
