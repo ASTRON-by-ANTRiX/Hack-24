@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Rules.module.css';  // Import the CSS module
 import { Link } from 'react-router-dom';
+import close from '../../assets/close.png';
 
 const RuleBookMenu = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,7 +22,7 @@ const RuleBookMenu = () => {
   // Content for different buttons
   const gameComponents = (
     <div className={styles.modalBody}>
-      <h1>1. Game Components:</h1>
+      <h1 className={styles.modalTitle}>Game Components:</h1>
       <ul>
         <li><strong>Planet Cards:</strong> Each card has unique stats (Mass, Distance from Star, Atmosphere, Surface Temperature, etc.).</li>
         <li><strong>Star Cards:</strong> Defines the star's type (Sun-like, Red Dwarf, etc.) and its life cycle phase (Main Sequence, Red Giant, White Dwarf).</li>
@@ -36,7 +37,7 @@ const RuleBookMenu = () => {
 
   const gameSetup = (
     <div className={styles.modalBody}>
-      <h2>2. Game Setup:</h2>
+      <h2 className={styles.modalTitle}>Game Setup:</h2>
       <ol>
         <li><strong>Select a Star Card:</strong> Randomly assign a Star Card.</li>
         <li><strong>Draw Planet Cards:</strong> Start with three random planet cards (not yet discovered).</li>
@@ -48,7 +49,7 @@ const RuleBookMenu = () => {
 
   const gamePhases = (
     <div className={styles.modalBody}>
-      <h3>Game Phases:</h3>
+      <h3 className={styles.modalTitle}>Game Phases:</h3>
       <div>
         <h4>Phase 1: Planet Detection Phase</h4>
         <p>Players select a Detection Method to search for planets around their star. Each method has unique mechanics:</p>
@@ -115,7 +116,7 @@ const RuleBookMenu = () => {
 
   const victoryConditions = (
     <div className={styles.modalBody}>
-      <h4>4. Victory Conditions:</h4>
+      <h4 className={styles.modalTitle}>Victory Conditions:</h4>
       <p>
         The game ends when the star reaches its final stage (e.g., White Dwarf). Calculate the total Habitability Score for all planets placed in the habitable zone and compare it to the benchmarks:
       </p>
@@ -140,31 +141,31 @@ const RuleBookMenu = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>The Rule Book</h1>
       <div className={styles.overview}>
-        <h2>Game Overview</h2>
         <p>
           In the Planetary Habitability Game, players use scientific methods to discover planets and place them in the habitable zone of a star system before the star reaches the end of its life cycle. Players will search for planets, determine their habitability, and adapt to the evolving star system's conditions.
         </p>
       </div>
       <div className={styles.menu}>
         <div className={styles.btnList}> 
-        <button className={styles.button} onClick={() => openModal(gameComponents)}>1. Game Components</button>
-        <button className={styles.button} onClick={() => openModal(gameSetup)}>2. Game Setup</button>
-        <button className={styles.button} onClick={() => openModal(gamePhases)}>3. Game Phases</button>
-        <button className={styles.button} onClick={() => openModal(victoryConditions)}>4. Victory Conditions</button>
+        <button className={styles.button} onClick={() => openModal(gameComponents)}>Game Components</button>
+        <button className={styles.button} onClick={() => openModal(gameSetup)}>Game Setup</button>
+        <button className={styles.button} onClick={() => openModal(gamePhases)}>Game Phases</button>
+        <button className={styles.button} onClick={() => openModal(victoryConditions)}>Victory Conditions</button>
+        <div className={styles.playNowContainer}>
+        <Link to="/game"><button className={styles.playNowButton}>Play Now</button></Link>
+      </div>
         </div>
         <div>
           <img src='/rulesImage.png' alt='image' className={styles.sideImage}/>
         </div>
       </div>
-      <div className={styles.playNowContainer}>
-        <Link to="/game"><button className={styles.playNowButton}>Play Now</button></Link>
-      </div>
+      
 
       {/* Modal */}
       {isModalOpen && (
         <div className={styles.modalOverlay}>
           <div className={styles.modalContent}>
-            <button className={styles.closeButton} onClick={closeModal}>✖</button>
+            <button className={styles.closeButton} onClick={closeModal}><img className={styles.closeButtonImage} src={close}></img></button>
             {modalContent}
           </div>
         </div>
