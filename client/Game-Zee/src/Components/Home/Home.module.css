@@ -1,6 +1,41 @@
 /* Home.module.css */
 
-.container {
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes backgroundShift {
+    0% {
+      background-position: center;
+    }
+    50% {
+      background-position: top right;
+    }
+    100% {
+      background-position: center;
+    }
+  }
+  
+  .container {
     background-color: black;
     height: 90vh; /* Full viewport height */
     display: flex;
@@ -9,14 +44,17 @@
     align-items: center;
     color: white; /* Text color to contrast the black background */
     background-image: url('../../assets/homeB.jpg'); /* Adjust path as necessary */
-  background-size: cover; /* Cover the entire card */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent tiling of the image */
+    background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent tiling of the image */
+    animation: backgroundShift 10s ease-in-out infinite; /* Animate background */
   }
   
   .title {
     font-size: 2rem;
     margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards; /* Fade in title */
   }
   
   .button {
@@ -27,14 +65,17 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    opacity: 0;
+    animation: fadeIn 2.5s ease-in-out forwards, pulse 3s ease-in-out infinite 2.5s; /* Fade in and pulse animation */
+  }
+  
+  .button:hover {
+    background-color: #590268;
+    color: white;
   }
   
   .button a {
     text-decoration: none;
     color: black;
-  }
-  
-  .button:hover {
-    background-color: #ccc;
   }
   

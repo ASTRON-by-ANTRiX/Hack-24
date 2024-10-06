@@ -152,7 +152,7 @@ const RuleBookMenu = () => {
         <button className={styles.button} onClick={() => openModal(victoryConditions)}>4. Victory Conditions</button>
       </div>
       <div className={styles.playNowContainer}>
-        <p>Understood the rules? Ready to play -&gt;</p>
+        <p>Understood the rules? Ready to play &rarr;</p>
         <Link to="/game"><button className={styles.playNowButton}>Play Now</button></Link>
       </div>
 

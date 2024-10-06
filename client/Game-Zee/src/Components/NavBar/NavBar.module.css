@@ -3,8 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-image: linear-gradient(to right, rgb(6, 49, 109), rgb(63, 5, 94));
     padding: 10px 20px;
+    border-radius: 20px;
+    height: 50px;
   }
   
   .logo h1 {
