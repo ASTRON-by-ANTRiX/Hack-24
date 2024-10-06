@@ -1,4 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   background-color: black;
+}
+
+@font-face {
+  font-family: 'heavitas';
+  src: url(./fonts/Heavitas.ttf);
 }
 
