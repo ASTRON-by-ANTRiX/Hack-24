@@ -1,16 +1,23 @@
 /* Main navbar container */
+@font-face {
+  font-family: 'heavitas';
+  src: url('../../fonts/Heavitas.ttf') format('truetype'); /* Adjust path as necessary */
+  font-weight: normal; /* or bold if you have a bold version */
+  font-style: normal; /* or italic if you have an italic version */
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(6, 49, 109), rgb(63, 5, 94));
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 50px;
+    background-color: #B4FAF8;
+    font-family: 'heavitas',san-serif;
   }
   
   .logo h1 {
-    color: white;
+    color: black;
   }
   
   /* Navigation links */
@@ -18,6 +25,13 @@
     list-style: none;
     display: flex;
     gap: 20px;
+  }
+  .navLinks li{
+    background-color: black;
+    padding: 20px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    border-radius: 10px;
   }
   
   .navLinks li a {

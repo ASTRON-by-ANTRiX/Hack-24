@@ -1,5 +1,16 @@
 /* Home.module.css */
-
+@font-face {
+  font-family: 'heavitas';
+  src: url('../../fonts/Heavitas.ttf') format('truetype'); /* Adjust path as necessary */
+  font-weight: normal; /* or bold if you have a bold version */
+  font-style: normal; /* or italic if you have an italic version */
+}
+@font-face {
+  font-family: 'highsens';
+  src: url('../../fonts/HIGHSENS.otf') format('opentype'); /* Adjust path as necessary */
+  font-weight: normal; /* or bold if you have a bold version */
+  font-style: normal; /* or italic if you have an italic version */
+}
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -43,11 +54,10 @@
     justify-content: center;
     align-items: center;
     color: white; /* Text color to contrast the black background */
-    background-image: url('../../assets/homeB.jpg'); /* Adjust path as necessary */
+    background-image: url('../../assets/homeB.png'); /* Adjust path as necessary */
     background-size: cover; /* Cover the entire card */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent tiling of the image */
-    animation: backgroundShift 10s ease-in-out infinite; /* Animate background */
   }
   
   .title {
@@ -55,11 +65,29 @@
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards; /* Fade in title */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
+  .mainTitle{
+    font-family: 'heavitas', sans-serif;
+    color: #AEFAF7;
+    font-size: 100px;
+  }
+  .tagLine{
+    font-family: 'highsens', sans-serif;
+    color: #AEFAF7;
+    font-size:25px;
+    position: relative;
+    bottom: 100px;
+
+  }
   .button {
-    background-color: white;
-    color: black;
+    background-color: #4286AA;
+    font-family: 'heavitas', sans-serif;
+    color: #AEFAF7;
+    position: relative;
+    bottom: 100px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

@@ -5,7 +5,8 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <p>The Game</p>
+        <div className={styles.mainTitle}><p>Astron</p></div>
+        <div className={styles.tagLine}><p>The Planet Hut</p></div>
       </div>
       <div>
       <Link to="/game">
