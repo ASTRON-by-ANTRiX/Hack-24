@@ -138,7 +138,7 @@ const RuleBookMenu = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Planetary Habitability Game - The Rule Book</h1>
+      <h1 className={styles.title}>The Rule Book</h1>
       <div className={styles.overview}>
         <h2>Game Overview</h2>
         <p>
@@ -146,13 +146,17 @@ const RuleBookMenu = () => {
         </p>
       </div>
       <div className={styles.menu}>
+        <div className={styles.btnList}> 
         <button className={styles.button} onClick={() => openModal(gameComponents)}>1. Game Components</button>
         <button className={styles.button} onClick={() => openModal(gameSetup)}>2. Game Setup</button>
         <button className={styles.button} onClick={() => openModal(gamePhases)}>3. Game Phases</button>
         <button className={styles.button} onClick={() => openModal(victoryConditions)}>4. Victory Conditions</button>
+        </div>
+        <div>
+          <img src='/rulesImage.png' alt='image' className={styles.sideImage}/>
+        </div>
       </div>
       <div className={styles.playNowContainer}>
-        <p>Understood the rules? Ready to play &rarr;</p>
         <Link to="/game"><button className={styles.playNowButton}>Play Now</button></Link>
       </div>
 

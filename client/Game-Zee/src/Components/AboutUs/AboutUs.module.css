@@ -1,0 +1,38 @@
+/* About.module.css */
+@font-face {
+    font-family: 'heavitas';
+    src: url('../../fonts/Heavitas.ttf') format('truetype'); /* Adjust path as necessary */
+    font-weight: normal; /* or bold if you have a bold version */
+    font-style: normal; /* or italic if you have an italic version */
+  }
+  @font-face {
+    font-family: 'raleway';
+    src: url('../../fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype'); /* Adjust path as necessary */
+    font-weight: normal; /* or bold if you have a bold version */
+    font-style: normal; /* or italic if you have an italic version */
+  }
+
+.aboutContainer {
+    background-image: url('../../assets/AboutBg.png'); /* Adjust path as necessary */
+    background-size: cover; /* Cover the entire card */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100vh;
+  }
+  
+  .title {
+    font-family: 'heavitas',sans-serif;
+    font-size: 40px;
+    color: #AEFAF7;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-family: 'raleway',sans-serif;
+    font-size: 16px;
+    color: #AEFAF7;
+    line-height: 1.5;
+  }
+  
