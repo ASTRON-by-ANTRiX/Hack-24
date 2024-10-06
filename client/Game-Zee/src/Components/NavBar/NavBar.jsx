@@ -1,27 +1,18 @@
-import React, { useState } from 'react';
+// src/Components/NavBar/NavBar.jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setIsMobile(!isMobile);
-  };
-
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <h1>Brand</h1>
+        <h1>Astron</h1>
       </div>
-      <ul className={`${styles.navLinks} ${isMobile ? styles.mobileMenu : ''}`}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul className={styles.navLinks}>
+        <li><Link to="/rules">Rules</Link></li>
+        <li><Link to="/about">About Us</Link></li>
       </ul>
-      <button className={styles.mobileMenuIcon} onClick={toggleMobileMenu}>
-        {isMobile ? '✖' : '☰'}
-      </button>
     </nav>
   );
 };
