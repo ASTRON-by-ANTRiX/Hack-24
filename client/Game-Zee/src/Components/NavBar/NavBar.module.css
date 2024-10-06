@@ -9,12 +9,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 30px 20px;
     border-radius: 10px;
-    height: 50px;
+    height: 10vh;
     background-color: #B4FAF8;
     font-family: 'heavitas',san-serif;
-    margin: 5px;
+    margin: 1rem;
   }
   
   .logo h1 {

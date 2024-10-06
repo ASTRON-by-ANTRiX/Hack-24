@@ -9,13 +9,16 @@ import AlienCard from '../AlienCard/AlienCard';
 import MoonCard from '../MoonCard/MoonCard';
 import TranslucentCard from '../TranslucentCard/TranslucentCard';
 import squiggly from '../../assets/Squiggly.svg'
+import Button from '../../assets/Button';
+import StatusBar from '../StatusBar';
 
 const GameBoard = () => {
 
 
     return (
-        <div className="flex">
-            <div className="p-4 h-screen">
+        <div className="flex justify-between">
+            <div className="p-4 min-w-max">
+                Column 1
                 <TranslucentCard>
                     <div>
                         ATHUL
@@ -25,11 +28,11 @@ const GameBoard = () => {
                 <TranslucentCard text="Hello">
                     <div className="flex flex-col gap-4">
                         <div className='flex flex-row px-1 gap-3'>
-                            <img src={squiggly} className='size-30'/>
+                            <img src={squiggly} className='size-30' />
                             <div className='grid grid-cols justify-end text-right'>
-                                <div className="text-xl font-['heavitas'] text-white p-[-2px]">High</div>
-                                <div className="text-xl font-['heavitas'] text-white p-0">Score</div>
-                                <div className="text-3xl font-['highsens'] text-white p-0">1050</div>
+                                <div className="text-xl font-['heavitas'] text-white">High</div>
+                                <div className="text-xl font-['heavitas'] text-white">Score</div>
+                                <div className="text-3xl font-['highsens'] text-white">1050</div>
                             </div>
                         </div>
                         <div className="text-3xl font-['heavitas'] text-white">Your Score</div>
@@ -39,9 +42,26 @@ const GameBoard = () => {
             </div>
 
 
-            <div className="bg-pink-50 p-4 h-screen">
-                Two Columns
-            </div>
+            <div className="p-2 h-screen w-full flex flex-col justify-end">
+  Column 2
+  <div className='flex gap-6 w-full'>
+    {/* DRAW CARD button */}
+    <Button btnTxt="DRAW CARD" width="auto" />
+
+    {/* STAR LIFE button that takes up all the remaining space */}
+    <div className='flex flex-row flex-grow'>
+      <Button btnTxt="STAR LIFE" width="full">
+        {<StatusBar level={83} />}
+      </Button>
+    </div>
+
+    {/* FIND PLANET button */}
+    <Button btnTxt="FIND PLANET" width="auto" />
+  </div>
+</div>
+
+
+
         </div>
     );
 };
