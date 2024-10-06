@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Rules.module.css';  // Import the CSS module
+import { Link } from 'react-router-dom';
 
 const RuleBookMenu = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -152,7 +153,7 @@ const RuleBookMenu = () => {
       </div>
       <div className={styles.playNowContainer}>
         <p>Understood the rules? Ready to play -&gt;</p>
-        <button className={styles.playNowButton}>Play Now</button>
+        <Link to="/game"><button className={styles.playNowButton}>Play Now</button></Link>
       </div>
 
       {/* Modal */}

@@ -10,6 +10,7 @@ const Navbar = () => {
         <h1>Astron</h1>
       </div>
       <ul className={styles.navLinks}>
+        <li><Link to ="/">Home</Link></li>
         <li><Link to="/rules">Rules</Link></li>
         <li><Link to="/about">About Us</Link></li>
       </ul>
